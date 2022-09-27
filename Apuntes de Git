@@ -18,6 +18,7 @@ git diff                                      = Muestra los cambios/diferencias 
 git diff --staged                             = Muestra los cambios/diferencias escritos que están en la etapa de staged
 git init                                      = Para inicializar un repositorio
 git log                                       = Muestra el historial de commits
+git log -p                                    = Muestra el historial de commits con los cambios
 git log --oneline                             = Muestra el historial de commits en una sola linea
 git merge                                     = Une dos ramas
 pit push -u origin master                     = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)
@@ -28,7 +29,7 @@ git reset --soft                              = Volvemos en el tiempo - Mantiene
 git restore --staged <file>                   = Deshace el git add
 git restore <file>                            = Deshace los cambios realizados
 git rm                                        = Elimina un archivo
-git rm cached                                 = Elimina un archivo del repositorio pero no del disco duro
+git rm --cached <file>                        = Elimina un archivo del repositorio pero no del disco duro y que no lo este monitoreando
 git show                                      = Muestra los cambios de un archivo
 git status                                    = Ver estado de nuestros archivos
 git status -s                                 = Status del repositorio en una sola linea (M Rojo: Modificado, M Verde: Modificado, A Verde: Agregado, ?? Rojo: Nuevo))
