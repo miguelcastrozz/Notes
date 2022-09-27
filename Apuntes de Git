@@ -1,0 +1,72 @@
+git add                         = Adiciona todos los archivos, se pueden varios solo hay que separarlos por un espacio
+git add .                       = Adiciona todos los archivos (MALA PRACTICA)
+git branch                      = Muestra la rama en la que se encuentra
+git commit                      = Guarda los cambios
+git config                      = Configura el usuario
+git config -h                   = Ayuda de la configuración
+git config --global             = Configura el usuario global para que all los proyectos queden igual
+git config --global user.mail   = Configura el correo del usuario
+git config --global user.name   = Configura el nombre del usuario
+git config --global core.editor "code --wait" = Configura el editor de texto
+git config --global core.autocrlf input       = Configura el autocrlf
+git config --global -e          = Muestra la configuración
+git config --list               = Muestra la configuración del usuario
+git config --list --show-origin = Muestra la configuración del usuario con la ruta del archivo
+git checkout -b                 = Crea una rama y se mueve a ella
+git diff                        = Muestra los cambios escritos que no están en la etapa de staged
+git diff --staged               = Muestra los cambios escritos que están en la etapa de staged
+git init                        = Inicializa o repositorio
+git log                         = Muestra el historial de commits
+git log --oneline               = Muestra el historial de commits en una sola linea
+git merge                       = Une dos ramas
+pit push -u origin master       = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)
+git remote add origin ...       = Agrega un repositorio remoto
+git reset                       = Volvemos en el tiempo (versión + h / s)
+git reset --hard [V]            = Volvemos en el tiempo - Borra los cambios realizados
+git reset --soft                = Volvemos en el tiempo - Mantiene los cambios realizados
+git restore --staged <file>     = Deshace el git add
+git restore <file>              = Deshace los cambios realizados
+git rm                          = Elimina un archivo
+git rm cached                   = Elimina un archivo del repositorio pero no del disco duro
+git show                        = Muestra los cambios de un archivo
+git status                      = Status del repositorio
+git status -s                   = Status del repositorio en una sola linea (M Rojo: Modificado, M Verde: Modificado, A Verde: Agregado, ?? Rojo: Nuevo))
+git version                     = Muestra la versión de git
+
+merge: 1. Mezclar dos o más ramas en una sola rama
+       2. Unir dos o más ramas en una sola rama
+
+APUNTES DE TERMINAL
+
+cat       = Concatenar archivos y mostrarlos contenido en la terminal
+code      = Abre Visual Studio Code
+cd        = change directory (cambiar directorio)
+cd .      = directorio actual
+cd ..     = ir al directorio anterior
+cd ./ /   = Ir al directorio especificado
+cd ./" "/ = Ir al directorio especificado
+ls        = list (listar)
+ls -a     = listar todos los archivos incluyendo los ocultos
+ls -al    = listar archivos ocultos
+clear     = limpiar la terminal
+history   = ver el historial de comandos
+mkdir     = make directory (crear carpeta)
+mv archivo1.txt archivo.txt = renombrar archivo
+pwd       = Imprime el ubicación del directorio actual
+rm        = remove (eliminar)
+sudo purge = Eliminar paquetes
+touch     = crear archivo (Parámetro: nombre del archivo)
+--help    = ayuda de un comando
+
+esc + shift + z + z
+: + w + q + enter
+
+:edit + nombre del archivo
+
+wait: Para tomar el control cuando cerremos la terminal
+
+Mover carpeta aprendiendo vim
+code . = Abre Visual Studio Code en la carpeta actual de terminal
+
+Untracked files: Archivos que no están siendo rastreados por git
+Proyectos

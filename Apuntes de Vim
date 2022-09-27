@@ -1,0 +1,110 @@
+LETRAS
+
+a = Insertar texto después del cursor
+A = Insertar texto al final de la línea
+b = Moverse hacia atrás
+d = Borrar
+e = Moverse al final de la palabra
+G = Ir al final del archivo
+i = Insertar texto antes del cursor
+j = Moverse ⬇
+h = Moverse ⬅
+k = Moverse ⬆
+l = Moverse ➡
+o = Abrir nueva línea
+O = Abrir nueva línea arriba
+p = Pegar
+P = Pegar antes
+r = Remplazar carácter
+R = Remplazar caracteres hasta que se presione esc
+u = Deshacer
+v = Modo visual
+w = Siguiente palabra
+x = Eliminar carácter
+X = Eliminar carácter anterior
+y = Copiar
+
+cw = Cambiar palabra
+db = Eliminar palabra anterior
+dd = Eliminar línea
+de = Eliminar palabra y espacio
+dw = Eliminar palabra
+gf = Abrir archivo
+gd = Abrir definición
+gg = Ir al principio del archivo
+yy = Copiar línea actual
+d$  = Eliminar hasta el final de la línea
+
+ciw = Cambiar palabra y espacios
+di" = Eliminar contenido de comillas
+di( = Eliminar contenido de paréntesis di{ = Eliminar contenido de llaves
+di[ = Eliminar contenido de corchetes
+vip = Seleccionar all el contenido de un bloque
+"+y = Copiar para el navegador
+
+v + seleccionar = Copiar
+0 = Ir al principio de la línea
+. = Repetir el último comando
+* = Buscar palabra actual
+% = Saltar al paréntesis correspondiente
+$ = Ir al final de la línea
+
+TECLAS
+
+esc = Salir de insertar / visual
+
+control b = Devolver de página en página
+control i = Volver al archivo siguiente
+control d = Saltar de media página en media página
+control f = Saltar de página en página
+control o = Volver al archivo anterior
+control r = Rehacer
+control u = Devolver de media página en media página
+shit    a = Insertar texto al final de la línea
+shift   v = Seleccionar bloque
+shift   [ = Ir al principio del bloque
+shift   ] = Ir al final del bloque
+
+PARÁMETRO
+
+d#b = Eliminar 6 palabras anteriores
+d#e = Eliminar 6 palabras y espacios
+d#d = Eliminar 6 líneas de abajo
+d#f = Eliminar 6 líneas de arriba
+
+d#k = Eliminar 6 líneas para arriba
+d#j = Eliminar 6 líneas para abajo
+
+y#y = Copiar 6 líneas de abajo
+
+df# = Eliminar hasta z
+dt# = Eliminar hasta z sin borrar z
+
+#j  = Mover 19 líneas hacia abajo
+#k  = Mover 19 líneas hacia arriba
+#G  = Ir a la línea número
+/#  = Buscar la palabra después del cursor
+/#n = Buscar la palabra después del cursor y saltar a la siguiente coincidencia (N) = Coincidencia anterior
+/#$ = Buscar la letra al final de la línea
+?#  = Buscar la palabra antes del cursor
+?#n = Buscar la palabra antes del cursor y saltar a la siguiente coincidencia (N) = Coincidencia anterior
+
+COMANDOS
+
+:               = Comandos a vim
+:q              = Salir sin guardar
+:qa             = Salir de todos los archivos sin guardar
+:q!             = Salir sin guardar y sin preguntar
+:set background = <color> = Cambiar colores
+:set nu         = Mostrar números de línea
+:set nu!        = Ocultar números de línea
+:s/#/#          = Remplazar palabra una vez
+:s/#/#g         = Remplazar palabra todas las veces en la línea
+:s/#/#/g        = Remplazar palabra en la línea actual
+:W              = Guardar
+:wq             = Guardar y salir / :x
+:wq!            = Guardar y salir sin preguntar / :x!
+
+:%s/#/#g        = Remplazar palabra todas las veces en el archivo todas
+:%s/#/#gc       = Remplazar palabra todas las veces en el archivo y preguntar
+:%s/$/#         = Agregar # al final de cada línea
