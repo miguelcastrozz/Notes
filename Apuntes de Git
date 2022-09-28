@@ -21,6 +21,7 @@ git log                                       = Muestra el historial de commits
 git log -p                                    = Muestra el historial de commits con los cambios
 git log --oneline                             = Muestra el historial de commits en una sola linea
 git merge                                     = Une dos ramas
+git pull --rebase origin main                 = Trae los cambios del repositorio remoto
 pit push -u origin master                     = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)
 git remote add origin ...                     = Agrega un repositorio remoto
 git reset                                     = Volvemos en el tiempo (versión + h / s)
@@ -37,7 +38,6 @@ git version                                   = Muestra la versión de git
 
 merge: 1. Mezclar dos o más ramas en una sola rama
        2. Unir dos o más ramas en una sola rama
-
 
 :edit + nombre del archivo
 wait: Para tomar el control cuando cerremos la terminal
