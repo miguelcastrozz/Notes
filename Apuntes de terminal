@@ -1,4 +1,5 @@
 alias                                  = Crear comando personalizado
+cal                                    = Calendario
 cat <file>                             = Mostrar contenido del archivo en la terminal
 cat -n <file>                          = Mostrar contenido del archivo en la terminal con numeración de líneas
 cat -n <file> | less                   = Mostrar contenido del archivo en la terminal con numeración de líneas y posibilidad de navegar por el archivo
@@ -20,17 +21,21 @@ find <origen> -iname <"nombre">        = Buscar archivo por nombre sin tener en 
 find <origen> -type <tipo>             = Buscar archivo por tipo
 find <origen> -type d -name <"nombre"> = Buscar archivo por tipo
 ls                                     = list (listar)
+ls -a                                  = Listar archivos ocultos
 ls -l                                  = listar con detalles (d = carpeta, l = enlace, - = archivo)
 ls -l -h                               = listar con detalles y tamaño en human readable
 ls -lh                                 = listar con detalles y tamaño en human readable
 ls -a                                  = listar todos los archivos incluyendo los ocultos
 ls -al                                 = listar archivos ocultos
 clear                                  = limpiar la terminal
-history                                = ver el historial de comandos
+history                                = Ver el historial de comandos
+man <comando>                          = Ver la ayuda del comando
 mkdir                                  = make directory (crear carpeta)
 mkdir -p                               = crear carpeta y sub carpetas y si no existen las crea
 move <file> <destino>                  = Mover archivo
+nano <file>                            = Abrir archivo con nano
 mv archivo1.txt archivo.txt            = renombrar archivo
+ping <ip>                              = ping (comprobar conexión)
 pwd                                    = Donde estoy ubicado
 rm                                     = Eliminar
 rm -i                                  = Eliminar preguntando
@@ -41,5 +46,7 @@ sudo                                   = super user do (ejecutar como administra
 sudo apt install <package>             = Instalar paquete
 sudo purge                             = Eliminar paquetes
 touch <file>                           = Crear archivo (Parámetro: nombre del archivo)
+top                                    = Ver procesos
+vim <file>                             = Editar archivo con vim
 --color=auto                           = Mostrar colores en la terminal
 --help                                 = Muestra all lo que podemos hacer con un comando ❌
