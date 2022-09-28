@@ -38,33 +38,8 @@ git version                                   = Muestra la versión de git
 merge: 1. Mezclar dos o más ramas en una sola rama
        2. Unir dos o más ramas en una sola rama
 
-APUNTES DE TERMINAL
-
-cat       = Concatenar archivos y mostrarlos contenido en la terminal
-code      = Abre Visual Studio Code
-cd        = change directory (cambiar directorio)
-cd .      = directorio actual
-cd ..     = ir al directorio anterior
-cd ./ /   = Ir al directorio especificado
-cd ./" "/ = Ir al directorio especificado
-ls        = list (listar)
-ls -a     = listar todos los archivos incluyendo los ocultos
-ls -al    = listar archivos ocultos
-clear     = limpiar la terminal
-history   = ver el historial de comandos
-mkdir     = make directory (crear carpeta)
-mv archivo1.txt archivo.txt = renombrar archivo
-pwd       = Imprime el ubicación del directorio actual
-rm        = remove (eliminar)
-sudo purge = Eliminar paquetes
-touch     = crear archivo (Parámetro: nombre del archivo)
---help    = ayuda de un comando
-
-esc + shift + z + z
-: + w + q + enter
 
 :edit + nombre del archivo
-
 wait: Para tomar el control cuando cerremos la terminal
 
 Mover carpeta aprendiendo vim
