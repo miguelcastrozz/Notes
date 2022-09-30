@@ -1,3 +1,3 @@
 # Notas de diferentes tecnologías
 
-Apuntes creados por mi y cin ayuda de inteligencia artificial
+Apuntes creados por mi y con ayuda de inteligencia artificial
