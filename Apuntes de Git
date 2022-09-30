@@ -12,6 +12,7 @@ git config --global core.autocrlf input       = Configura el autocrlf
 git config --global -e                        = Muestra la configuración
 git config --list                             = Muestra la configuración del usuario
 git config --list --show-origin               = Muestra la configuración del usuario con la ruta del archivo
+git checkout --orphan                         = Crea una rama huérfana
 git checkout -- <file>                        = Revierte los cambios del archivo
 git checkout -b                               = Crea una rama y se mueve a ella
 git diff                                      = Muestra los cambios/diferencias escritos que no están en la etapa de staged
@@ -38,12 +39,3 @@ git version                                   = Muestra la versión de git
 
 merge: 1. Mezclar dos o más ramas en una sola rama
        2. Unir dos o más ramas en una sola rama
-
-:edit + nombre del archivo
-wait: Para tomar el control cuando cerremos la terminal
-
-Mover carpeta aprendiendo vim
-code . = Abre Visual Studio Code en la carpeta actual de terminal
-
-Untracked files: Archivos que no están siendo rastreados por git
-Proyectos

@@ -13,6 +13,7 @@ cd ./ /                                = Ir al directorio especificado
 cd ./" "/                              = Ir al directorio especificado
 cp <file> <destino>                    = Copiar archivo
 cp -r <dir> <destino>                  = Copiar directorio
+edit <file>                            = Editar archivo
 echo <text>                            = Imprimir texto en la terminal
 echo <text> > <file>                   = Imprimir texto en el archivo
 echo <text> >> <file>                  = Imprimir texto en el archivo sin sobreescribir el contenido
