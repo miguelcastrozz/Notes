@@ -2,46 +2,76 @@ LETRAS
 
 a = Insertar texto después del cursor
 A = Insertar texto al final de la línea
-b = Moverse hacia atrás
-e = Moverse al final de la palabra siguiente
-G = Ir al final del archivo
+b = Principio de la palabra actual
+e = Final de la palabra actual
+G = Final archivo
 i = Insertar texto antes del cursor
-j = Moverse ⬇
-h = Moverse ⬅
-H = Ir al incio de la pantalla
-k = Moverse ⬆
-l = Moverse ➡
-M = Ir al medio de la pantalla 
-L = Ir al final de l pantalla 
-o = Abrir nueva línea
-O = Abrir nueva línea arriba
-p = Pegar
+j = Baja una línea
+h = Desplazamiento derecha
+I = Insertar texto al principio de la línea
+H = Ir al inicio de la pantalla
+k = Sube una línea
+l = Desplazamiento derecha
+L = Ir al final de l pantalla
+M = Ir al medio de la pantalla
+n = Siguiente coincidencia de búsqueda
+N = Anterior coincidencia de búsqueda
+o = Inserta nueva línea de bajo
+O = Inserta nueva línea de antes
+p = Pegar línea
 P = Pegar antes
-r = Remplazar carácter
+r = Reemplaza letra por {letra}
 R = Remplazar caracteres hasta que se presione esc
 s = Eliminar carácter y entrar en modo insertar
+S = Eliminar línea y entrar en modo insertar
 u = Deshacer
-v = Modo visual
-w = Moverse al inicio de la palabra siguiente
-x = Eliminar carácter
-X = Eliminar carácter anterior
+v = Modo visual + Copiar. o para cambiar de lado, a w selecciona palabra
+V = Seleccionar línea
+w = Principio de la siguiente palabra
+x = Borra letra actual
+X = Borra letra izquierda actual
 y = Copiar
+
+0 = Principio de línea
++ = Bajar una línea
+- = Subir una línea
+. = Repetir el último comando
+* = Busca la misma palabra sobre la que estamos
+% = Ir a apertura y cierre de paréntesis
+$ = Final de línea
 
 ce = Remplazar hasta el final de la palabra y escribir
 cw = Cambiar palabra
 db = Eliminar palabra anterior
-dd = Eliminar línea
+dd = Borra toda la línea (cortar)
 de = Eliminar palabra y espacio
-dw = Eliminar palabra
+dG = Eliminar desde el cursor hasta el final del archivo
+dw = Borra toda palabra
 gd = Abrir definición
-gg = Ir al principio del archivo
-yy = Copiar línea actual
+gg = Inicio archivo
+yy = Copia r línea actual
+ve = Seleccionar hasta el final de la palabra
+
 d0 = Eliminar hasta el principio de la línea
 d$ = Eliminar hasta el final de la línea
-ve = Seleccionar hasta el final de la palabra 
+=G = Formatear código
+=% = Formatear código entre paréntesis
+[[ = Ir al principio de la función / TODO
+]] = Ir al final de la función
+{ = Ir al principio de la función
+} = Ir al final de la función
+( = Ir al principio de la función
+) = Ir al final de la función / TODO
+<< = Desplazar línea a la izquierda
+>> = Desplazar línea a la derecha
+>b = Desplazar palabra a la derecha
+<e = Desplazar palabra a la izquierda
+>% = Desplazar todo el bloque a la derecha
+<% = Desplazar todo el bloque a la izquierda
 
+dgg = Eliminar desde el cursor hasta el inicio del archivo
 ciw = Cambiar palabra y espacios
-diw = Eliminar palabra y espacios  
+diw = Eliminar palabra y espacios
 di' = Eliminar contenido de comillas simples
 di" = Eliminar contenido de comillas
 di( = Eliminar contenido de paréntesis
@@ -52,41 +82,36 @@ ve~ = Seleccionar palabra y cambiar a mayúsculas
 vip = Seleccionar all el contenido de un bloque
 "+y = Copiar para el navegador
 
-v + seleccionar = Copiar
-0 = Ir al principio de la línea
-. = Repetir el último comando
-* = Buscar palabra actual
-% = Saltar al paréntesis correspondiente
-$ = Ir al final de la línea
+esc = Salir de insertar / visual
 
 TECLAS
 
-esc = Salir de insertar / visual
-
 control b = Devolver de página en página
 control i = Volver al archivo siguiente
-control d = Saltar de media página en media página
+control d = Salta media página hacia abajo
 control f = Saltar de página en página
+control e = Bajar una línea
 control o = Volver al archivo anterior
 control r = Rehacer
-control u = Devolver de media página en media página
-shit    a = Insertar texto al final de la línea
-shift   i = Insertar texto al inicio de la línea 
-shift   s = Eliminar línea y entrar en modo insertar 
-shift   v = Selección de línea
+control u = Salta media página hacia arriba
+control y = Subir una línea
 shift   [ = Ir al principio del bloque
 shift   ] = Ir al final del bloque
 
-PARÁMETRO
+PARÁMETROS
 
-f# = Buscar el carácter # en la línea actual, ; para repetir y , para retroceder
-t# = Moverse hasta el carácter # en la línea actual, y ; para repetir y , para retroceder 
+f# = Buscar el carácter # en la línea actual,        ;  para repetir y , para retroceder
+m# = Crear un marcador con la letra #,               #' para ir
+q#
+t# = Moverse hasta el carácter # en la línea actual, ;  para repetir y , para retroceder
+
+#u  = Deshacer {número} veces
 
 d#b = Eliminar 6 palabras anteriores
 d#d = Eliminar 6 líneas de abajo
 d#e = Eliminar 6 palabras y espacios
-d#j = Eliminar 6 líneas para abajo
-d#k = Eliminar 6 líneas para arriba
+d#j = Eliminar 6 líneas para abajo, fijarse en las líneas relativas
+d#k = Eliminar 6 líneas para arriba, fijarse en las líneas relativas
 d#w = Eliminar 6 palabras y espacios
 y#y = Copiar 6 líneas de abajo
 
@@ -96,7 +121,14 @@ vi# = Seleccionar todo el contenido de los signos de agrupación
 
 #j  = Mover 19 líneas hacia abajo
 #k  = Mover 19 líneas hacia arriba
-#G  = Ir a la línea número
+#G  = Ir a la línea {número}
+#⏎  = Ir a la línea de abajo
+
+#dd = Eliminar/cortar {número} de líneas de abajo
+#yy = Copiar {número} de líneas de abajo
+#== = Indentar {número} de líneas
+#⌃r = Rehacer {número} veces
+
 /#  = Buscar la palabra después del cursor
 /#n = Buscar la palabra después del cursor y saltar a la siguiente coincidencia (N) = Coincidencia anterior
 /#$ = Buscar la letra al final de la línea
@@ -114,7 +146,10 @@ COMANDOS
 :set background = <color> = Cambiar colores
 :set nu         = Mostrar números de línea
 :set nu!        = Ocultar números de línea
-:sp             = Dividir la pantalla horizontalmente, ⌃ w w para cambiar entre pestañas  
+:sp             = Dividir pantalla horizontalmente, ⌃ w # para cambiar entre pestañas J, K, L, H. ⌃ w # para cambiar de pestaña con las flechas. ⌃ w + = Agrandar pestaña. ⌃ w - = Reducir pestaña.
+:sp <file>      = Dividir pantalla horizontalmente pero con otro archivo TODO
+:vsp            = Dividir pantalla verticalmente
+:vsp <file>     = Dividir pantalla verticalmente pero con otro archivo TODO
 
 :s/#/#          = Remplazar palabra una vez
 :s/#/#/g        = Remplazar palabra en la línea actual
@@ -123,8 +158,8 @@ COMANDOS
 :wq!            = Guardar y salir sin preguntar / :x!
 
 :%s/#/#         = Remplazar primera coincidencia en todas las línea del archivo
-:%s/#/#/g       = Remplazar todas las coincidencias en todas las línea del archivo
-:%s/#/#gc       = Remplazar palabra todas las veces en el archivo y preguntar
+:%s/#/#/g       = Remplazar todas las coincidencias de manera global en todas las líneas del archivo
+:%s/#/#/gc      = Remplazar todas las coincidencias de manera global en todas las líneas del archivo y preguntar para confirmar
 :%s/$/#         = Agregar # al final de cada línea
 
 Extensiones
@@ -136,3 +171,7 @@ Extensiones
 d   = Borrar
 d#f = Eliminar 6 líneas de arriba
 gf = Abrir archivo
+
+
+
+c
