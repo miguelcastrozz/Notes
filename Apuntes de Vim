@@ -49,28 +49,22 @@ dG = Eliminar desde el cursor hasta el final del archivo
 dw = Borra toda palabra
 gd = Abrir definición
 gg = Inicio archivo
-yy = Copia r línea actual
+yy = Copia línea actual
 ve = Seleccionar hasta el final de la palabra
 
 d0 = Eliminar hasta el principio de la línea
 d$ = Eliminar hasta el final de la línea
 =G = Formatear código
 =% = Formatear código entre paréntesis
-[[ = Ir al principio de la función / TODO
-]] = Ir al final de la función
-{ = Ir al principio de la función
-} = Ir al final de la función
-( = Ir al principio de la función
-) = Ir al final de la función / TODO
 << = Desplazar línea a la izquierda
 >> = Desplazar línea a la derecha
 >b = Desplazar palabra a la derecha
 <e = Desplazar palabra a la izquierda
->% = Desplazar todo el bloque a la derecha
-<% = Desplazar todo el bloque a la izquierda
+>% = Desplazar all el bloque a la derecha
+<% = Desplazar all el bloque a la izquierda
 
-dgg = Eliminar desde el cursor hasta el inicio del archivo
 ciw = Cambiar palabra y espacios
+dgg = Eliminar desde el cursor hasta el inicio del archivo
 diw = Eliminar palabra y espacios
 di' = Eliminar contenido de comillas simples
 di" = Eliminar contenido de comillas
@@ -102,7 +96,7 @@ PARÁMETROS
 
 f# = Buscar el carácter # en la línea actual,        ;  para repetir y , para retroceder
 m# = Crear un marcador con la letra #,               #' para ir
-q#
+q# = Ejecutar una macro con el nombre #,             @# para repetir, #@# Para repetir n veces
 t# = Moverse hasta el carácter # en la línea actual, ;  para repetir y , para retroceder
 
 #u  = Deshacer {número} veces
@@ -117,7 +111,7 @@ y#y = Copiar 6 líneas de abajo
 
 df# = Eliminar hasta z
 dt# = Eliminar hasta z sin borrar z
-vi# = Seleccionar todo el contenido de los signos de agrupación
+vi# = Seleccionar all el contenido de los signos de agrupación
 
 #j  = Mover 19 líneas hacia abajo
 #k  = Mover 19 líneas hacia arriba
@@ -147,9 +141,9 @@ COMANDOS
 :set nu         = Mostrar números de línea
 :set nu!        = Ocultar números de línea
 :sp             = Dividir pantalla horizontalmente, ⌃ w # para cambiar entre pestañas J, K, L, H. ⌃ w # para cambiar de pestaña con las flechas. ⌃ w + = Agrandar pestaña. ⌃ w - = Reducir pestaña.
-:sp <file>      = Dividir pantalla horizontalmente pero con otro archivo TODO
+:sp <file>      = Dividir pantalla horizontalmente pero con otro archivo
 :vsp            = Dividir pantalla verticalmente
-:vsp <file>     = Dividir pantalla verticalmente pero con otro archivo TODO
+:vsp <file>     = Dividir pantalla verticalmente pero con otro archivo
 
 :s/#/#          = Remplazar palabra una vez
 :s/#/#/g        = Remplazar palabra en la línea actual
@@ -170,8 +164,10 @@ Extensiones
 
 d   = Borrar
 d#f = Eliminar 6 líneas de arriba
-gf = Abrir archivo
-
-
-
-c
+gf  = Abrir archivo
+[[  = Ir al principio de la función
+]]  = Ir al final de la función
+{   = Ir al principio de la función
+}   = Ir al final de la función
+(   = Ir al principio de la función
+)   = Ir al final de la función
