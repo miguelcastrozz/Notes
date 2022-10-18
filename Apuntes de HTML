@@ -1,0 +1,36 @@
+HTML
+
+<strong> Sirve para indicar que es importante
+<em>     Cursiva
+<hr>     Linea horizontal
+<s>      Tachar
+<small>  Pequeño
+
+placeholder Texto de ayuda en el input
+required    Campo obligatorio
+checked     Seleccionado por defecto
+value       Valor por defecto
+
+APUNTES DE CSS
+
+Un elemento pude tener varias clases
+width   Ancho
+border-style: solid                      (↕)
+border-style: solid dotted               (↕ ⬅➡)
+border-style: solid dotted dashed        (⬆ ⬅➡ ⬇)
+border-style: solid dotted dashed double (⬆ ➡ ⬇ ⬅) Reloj
+padding: 20px 10px 20px 10px;            (⬆ ➡ ⬇ ⬅) Reloj
+margin: 20px 10px 20px 10px;             (⬆ ➡ ⬇ ⬅) Reloj
+vw      1% del ancho de la ventana gráfica
+vh      1% del alto de la ventana gráfica
+em      1% del tamaño de la fuente
+                    : black; (para navegadores que no soporten variables)
+variable de respaldo: (var--variable, black)
+Si no se asigna valor a una variable en un elemento dado, se usara el valor del elemento padre
+Para no tener problemas de herencia con variables respecto a sus padres, se crean globalmente con :root
+Para cambiar el valor de una variable en un area especifica solo se coloca la variable con su nuevo valor como si creara nuevamente
+
+GUIA DE ESTILOS
+
+- En HTML y CSS se deben tener 2 espacios de indentación
+- En CSS cada llaves hay que dejar un espacio

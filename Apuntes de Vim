@@ -5,11 +5,11 @@ A = Insertar texto al final de la línea
 b = Principio de la palabra actual
 e = Final de la palabra actual
 G = Final archivo
-i = Insertar texto antes del cursor
-j = Baja una línea
 h = Desplazamiento derecha
-I = Insertar texto al principio de la línea
 H = Ir al inicio de la pantalla
+i = Insertar texto antes del cursor
+I = Insertar texto al principio de la línea
+j = Baja una línea
 k = Sube una línea
 l = Desplazamiento derecha
 L = Ir al final de l pantalla
@@ -85,7 +85,7 @@ control i = Volver al archivo siguiente
 control d = Salta media página hacia abajo
 control f = Saltar de página en página
 control e = Bajar una línea
-control o = Volver al archivo anterior
+control o = Volver al archivo anterior ⚠️
 control r = Rehacer
 control u = Salta media página hacia arriba
 control y = Subir una línea
@@ -147,7 +147,7 @@ COMANDOS
 
 :s/#/#          = Remplazar palabra una vez
 :s/#/#/g        = Remplazar palabra en la línea actual
-:W              = Guardar
+:w              = Guardar
 :wq             = Guardar y salir / :x
 :wq!            = Guardar y salir sin preguntar / :x!
 
