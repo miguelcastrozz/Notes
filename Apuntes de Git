@@ -1,41 +1,96 @@
-git add                                       = Agrega todos los archivos al stating area, se pueden varios solo hay que separarlos por un espacio
-git add .                                     = Adiciona todos los archivos (MALA PRACTICA)
-git branch                                    = Muestra la rama en la que se encuentra
-git commit                                    = Crear un primer punto de control de nuestro código
-git config                                    = Configura el usuario
-git config -h                                 = Ayuda de la configuración
-git config --global                           = Configura el usuario global para que all los proyectos queden igual
-git config --global user.mail                 = Configura el correo del usuario
-git config --global user.name                 = Configura el nombre del usuario
-git config --global core.editor "code --wait" = Configura el editor de texto
-git config --global core.autocrlf input       = Configura el autocrlf
-git config --global -e                        = Muestra la configuración
-git config --list                             = Muestra la configuración del usuario
-git config --list --show-origin               = Muestra la configuración del usuario con la ruta del archivo
-git checkout --orphan                         = Crea una rama huérfana
-git checkout -- <file>                        = Revierte los cambios del archivo
-git checkout -b                               = Crea una rama y se mueve a ella
-git diff                                      = Muestra los cambios/diferencias escritos que no están en la etapa de staged
-git diff --staged                             = Muestra los cambios/diferencias escritos que están en la etapa de staged
-git init                                      = Para inicializar un repositorio
-git log                                       = Muestra el historial de commits
-git log -p                                    = Muestra el historial de commits con los cambios
-git log --oneline                             = Muestra el historial de commits en una sola linea
-git merge                                     = Une dos ramas
-git pull --rebase origin main                 = Trae los cambios del repositorio remoto
-pit push -u origin master                     = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)
-git remote add origin ...                     = Agrega un repositorio remoto
-git reset                                     = Volvemos en el tiempo (versión + h / s)
-git reset --hard [V]                          = Volvemos en el tiempo - Borra los cambios realizados
-git reset --soft                              = Volvemos en el tiempo - Mantiene los cambios realizados
-git restore --staged <file>                   = Deshace el git add
-git restore <file>                            = Deshace los cambios realizados
-git rm                                        = Elimina un archivo
-git rm --cached <file>                        = Elimina un archivo del repositorio pero no del disco duro y que no lo este monitoreando
-git show                                      = Muestra los cambios de un archivo
-git status                                    = Ver estado de nuestros archivos
-git status -s                                 = Status del repositorio en una sola linea (M Rojo: Modificado, M Verde: Modificado, A Verde: Agregado, ?? Rojo: Nuevo))
-git version                                   = Muestra la versión de git
+gitk     
+git add                                            = Agrega todos los archivos al stating area, se pueden varios solo hay que separarlos por un espacio
+git add .                                          = Agrega todos los archivos (MALA PRACTICA)
+git blame >archivo<                                = Muestra quien modifico cada linea del archivo
+git blame -c >archivo<                             = Muestra quien modifico cada linea del archivo y el commit, con identación
+git blame --help                                   = Ayuda de git blame
+git blame >Archivo< -L>Linea<,>Linea<              = Muestra quien modifico cada linea del archivo en el rango de lineas
+git branch                                         = Muestra la rama en la que se encuentra
+git branch -a                                      = Muestra todas las ramas
+git branch -r                                      = Muestra las ramas remotas
+git commit                                         = Crear un primer punto de control de nuestro código
+git config                                         = Configura el usuario
+git config -h                                      = Ayuda de la configuración
+git config --global                                = Configura el usuario global para que all los proyectos queden igual
+git config --global alias>name< >"command"<        = Crea un alias para un comando
+git config --global user.mail " "                  = Configura el correo del usuario
+git config --global user.name " "                  = Configura el nombre del usuario
+git config --global core.editor "code --wait"      = Configura el editor de texto
+git config --global core.autocrlf input            = Configura el autocrlf
+git config --global -e                             = Muestra la configuración
+git config --list                                  = Muestra la configuración del usuario
+git config --list --show-origin                    = Muestra la configuración del usuario con la ruta del archivo
+git checkout --orphan                              = Crea una rama huérfana
+git checkout -- <file>                             = Revierte los cambios del archivo
+git checkout -b <rama>                             = Crea una rama y se mueve a ella
+git checkout <Versión> <File>                      = Regresa a un punto anterior, Volver a una versión anterior
+git cherry-pick <commit>                           = Trae un commit de otra rama a la actual
+git clean -f                                       = Elimina los archivos que no están en el repositorio (No carpetas)
+git clean --dry-run                                = Muestra los archivos que se van a eliminar
+git commit --amend                                 = Modifica el último commit (Pega los cambios al último commit)
+git diff                                           = Muestra los cambios/diferencias escritos que no están en la etapa de staged
+git diff <Comparar> <Con>                          = Muestra los cambios/diferencias escritos entre dos versiones
+git diff --staged                                  = Muestra los cambios/diferencias escritos que están en la etapa de staged
+git init                                           = Para inicializar un repositorio
+git grep <Texto>                                   = Busca un texto en todos los archivos
+git grep -n >Texto<                                = Busca un texto en todos los archivos y muestra el número de línea
+git grep -n >Texto< -- <File>                      = Busca un texto en un archivo y muestra el número de línea
+git grep -c >Texto<                                = Busca un texto en todos los archivos y muestra la cantidad de veces que aparece
+git grep -c >"tag"<                                = Busca un tag en todos los archivos y muestra la cantidad de veces que aparece
+git log                                            = Muestra el historial de commits
+git log -p                                         = Muestra el historial de commits con los cambios
+git log -S >"Texto"<                               = Muestra el historial de commits con los cambios que contienen el texto
+git log --all --graph                              = Muestra el historial de commits con los cambios y la rama
+git log --all --graph --decorate --oneline         = Muestra el historial de commits con los cambios y la rama en una sola línea
+git log --oneline                                  = Muestra el historial de commits en una sola linea
+git log --stat                                     = Muestra el historial de commits con los cambios y estadísticas
+git merge                                          = Une dos ramas
+git pull --rebase origin main                      = Trae los cambios del repositorio remoto
+git pull origin master --allow-unrelated-histories = Trae los cambios del repositorio remoto, Fusionar lo remoto con lo local
+git push origin :refs/tags/>tag<                   = Elimina un tag del repositorio remoto
+git push -u origin master                          = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)
+git push origin >rama<                             = Sube los cambios al repositorio remoto
+git push origin --tags                             = Sube los tags al repositorio remoto
+git reflog                                         = Muestra el historial de commits
+git rebase >rama<                                  = Reescribe la historia
+git remote -v                                      = Muestra los repositorios remotos
+git remote add origin ...                          = Agrega un repositorio remoto
+git remote set-url origin <url>                    = Cambia la url del repositorio remoto
+git reset --HARD >Versión<                         = Volvemos en el tiempo - Borra los cambios realizados
+git reset --SOFT >Versión<                         = Volvemos en el tiempo - Mantiene los cambios realizados en staged
+git restore --staged <file>                        = Deshace el git add
+git restore <file>                                 = Deshace los cambios realizados
+git rm <file>                                      = Elimina un archivo
+git rm --cached <file>                             = Elimina un archivo del repositorio pero no del disco duro y que no lo este monitoreando
+git shortlog                                       = Muestra el historial de commits con los cambios y estadísticas
+git shorlog -sn                                    = Muestra el historial de commits con los cambios y estadísticas y la cantidad de commits
+git shortlog -sn --all                             = Muestra el historial de commits con los cambios y estadísticas y la cantidad de commits de todas las ramas
+git shortlog -sn --all --no-merges                 = Muestra el historial de commits con los cambios y estadísticas y la cantidad de commits de todas las ramas sin los merges
+git show <file>                                    = Muestra los cambios de un archivo
+git show-branch                                    = Muestra las ramas
+git show-branch --all                              = Muestra las ramas y los commits
+git show-ref --tags                                = Muestra las etiquetas con su hash
+git stash                                          = Guarda los cambios realizados temporalmente
+git stash branch <rama>                            = Crea una rama con los cambios realizados
+git stash drop                                     = Elimina el último stash
+git stash list                                     = Muestra los cambios realizados temporalmente
+git stash pop                                      = Trae los cambios realizados temporalmente
+git status                                         = Ver estado de nuestros archivos
+git status -s                                      = Status del repositorio en una sola linea (M Rojo: Modificado, M Verde: Modificado, A Verde: Agregado, ?? Rojo: Nuevo))
+git tag                                            = Muestra las etiquetas
+git tag -d >tag<                                   = Elimina una etiqueta local
+git version                                        = Muestra la versión de git
+
+ssh-keygen -t rsa -b 4096 -C "<email>"             = Genera una llave ssh (Publica y Privada)
 
 merge: 1. Mezclar dos o más ramas en una sola rama
        2. Unir dos o más ramas en una sola rama
+
+- Si no se guardan (commit) cambios antes de pasar a otra rama, estos cambios se perderán.
+- Si estoy en cabecera hago marge con master, master se une a cabecera
+- Con git remote add origin https://github.com/miguelcastrozz/Hyperblog.git nos conectamos con el repositorio remoto (Local -> Remoto)
+- Con git clone https://github.com/miguelcastrozz/Hyperblog.git clonamos el repositorio remoto y lo hacemos parte de nosotros como propietarios (Remoto -> Local) Las personas no pueden hacer push si no se agregan como colaboradores
+
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" c1b831f = Crea una etiqueta
+
+git >Comando< --help = Muestra la ayuda de un comando

@@ -2,6 +2,7 @@
 ;                                      = Encadenar comandos
 &&                                     = Encadenar comandos (si el anterior es correcto)
 alias                                  = Crear comando personalizado
+alias >name<"comando"                  = Crear comando personalizado
 cal                                    = Calendario
 cat <file>                             = Concatenar o mostrar archivos
 cat -n <file>                          = Mostrar contenido del archivo en la terminal con numeración de líneas
@@ -32,6 +33,7 @@ greap -l <text> <file>                 = Buscar en archivos y mostrar ruta de ar
 greap -n <text> <file>                 = Buscar en archivos y mostrar número de línea
 head <file>                            = Visualizar primeras 10 líneas de un archivo
 head -n <n> <file>                     = Visualizar primeras n líneas de un archivo
+history                                = Historial de comandos
 ls                                     = Listar archivos
 ls -a                                  = Listar archivos, incluso los ocultos
 ls -l                                  = Listar con detalles (d = carpeta, l = enlace, - = archivo)
@@ -44,7 +46,7 @@ history                                = Ver el historial de comandos
 lees <file>                            = Visualizar archivo en terminal
 man <comando>                          = Manual de comandos
 mkdir <name>                           = Crear una nueva carpeta
-mkdir -p <route>                       = Crear carpetas y sub carpetass y si no existen las crea
+mkdir -p <route>                       = Crear carpetas y sub carpetas y si no existen las crea
 move <file> <destino>                  = Mover archivo
 nano <file>                            = Abrir archivo con nano
 mv archivo1.txt archivo.txt            = Mover archivos o renombrarlos
@@ -64,7 +66,11 @@ tail <file>                            = Visualizar últimas 10 líneas de un ar
 tail -n <n> <file>                     = Visualizar últimas n líneas de un archivo
 touch <file>                           = Crear un nuevo archivo
 top                                    = Ver procesos
-tree                                   = Mostrar directorio en forma de arbol
+tree                                   = Mostrar directorio en forma de árbol
 vim <file>                             = Editar archivo con vim
 --color=auto                           = Mostrar colores en la terminal
 --help                                 = Muestra all lo que podemos hacer con un comando ❌
+-                                      = Para letras
+--                                     = Para palabras
+
+cmd + shift + r = Forzar actualización de la página
