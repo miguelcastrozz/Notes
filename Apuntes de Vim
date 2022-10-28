@@ -12,7 +12,7 @@ I = Insertar texto al principio de la línea
 j = Baja una línea
 k = Sube una línea
 l = Desplazamiento derecha
-L = Ir al final de l pantalla
+L = Ir al final de la pantalla
 M = Ir al medio de la pantalla
 n = Siguiente coincidencia de búsqueda
 N = Anterior coincidencia de búsqueda
@@ -155,10 +155,6 @@ COMANDOS
 :%s/#/#/g       = Remplazar todas las coincidencias de manera global en todas las líneas del archivo
 :%s/#/#/gc      = Remplazar todas las coincidencias de manera global en todas las líneas del archivo y preguntar para confirmar
 :%s/$/#         = Agregar # al final de cada línea
-
-Extensiones
-
-⌃ ; = EasyMotion
 
 ❌
 

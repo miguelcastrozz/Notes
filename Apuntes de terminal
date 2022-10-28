@@ -3,6 +3,7 @@
 &&                                     = Encadenar comandos (si el anterior es correcto)
 alias                                  = Mostrar alias creados
 alias >name< = "comando"               = Crear comando personalizado
+bc                                     = Calculadora
 cal                                    = Calendario
 cat <file>                             = Concatenar o mostrar archivos
 cat -n <file>                          = Mostrar contenido del archivo en la terminal con numeración de líneas
@@ -19,7 +20,13 @@ cd ./" "/                              = Ir al directorio especificado
 cd ./ /                                = Ir al directorio especificado
 cp <file> <destino>                    = Copiar un archivo
 cp -r <dir> <destino>                  = Copiar directorio
+curl <url>                             = Request HTTP via comando
+curl iconfig.me:                       = Mostrar tu IP pública
 date                                   = Mostrar fecha y hora
+date -d "2 days"                       = Mostrar fecha y hora en 2 días
+df -h                                  = Mostrar espacio en disco
+du -sh <dir>                           = Mostrar tamaño de un directorio
+du -sh <file>                          = Mostrar tamaño de un archivo
 edit <file>                            = Editar archivo
 echo <text>                            = Imprimir texto en la terminal
 echo <text> > <file>                   = Imprimir texto en el archivo
@@ -36,16 +43,17 @@ head <file>                            = Visualizar primeras 10 líneas de un ar
 head -n <n> <file>                     = Visualizar primeras n líneas de un archivo
 history                                = Historial de comandos
 kill <PID>                             = Matar proceso del computador
+ll                                     = Listar archivos y directorios
 ls                                     = Listar archivos
 ls -a                                  = Listar archivos, incluso los ocultos
+ls -al                                 = Listar archivos ocultos
+ls -alh                                = Listar archivos ocultos con tamaño en human readable
 ls -l                                  = Listar con detalles (d = carpeta, l = enlace, - = archivo)
 ls -la                                 = Listar con detalles y archivos ocultos
 ls -l -h                               = Listar con detalles y tamaño en human readable
 ls -lh                                 = Listar con detalles y tamaño en human readable
-ls -a                                  = Listar todos los archivos incluyendo los ocultos
-ls -al                                 = Listar archivos ocultos
-clear                                  = Limpiar la terminal
-history                                = Ver el historial de comandos
+clear                                  = Limpiar terminal
+history                                = Ver historial de comandos
 lees <file>                            = Visualizar archivo en terminal
 man <comando>                          = Manual de comandos
 mkdir <name>                           = Crear una nueva carpeta
@@ -64,6 +72,8 @@ rm -i                                  = Eliminar un archivo o carpeta confirma
 rm -i *                                = Eliminar todos los archivos preguntando
 rm -d                                  = Eliminar directorio vacío
 rm -r <dir>                            = Eliminar directorio y su contenido
+rsync -av <origen> <destino>           = Copiar directorio y su contenido
+stat <file>                            = Mostrar información de un archivo
 sudo                                   = Super user do (ejecutar como administrador)
 sudo apt install <package>             = Instalar paquete
 sudo pip uninstall >programa<          = Desinstalar programa
@@ -71,15 +81,30 @@ sudo purge                             = Eliminar paquetes
 tail <file>                            = Visualizar últimas 10 líneas de un archivo
 tail -n <n> <file>                     = Visualizar últimas n líneas de un archivo
 touch <file>                           = Crear un nuevo archivo
-top                                    = Ver procesos
+top                                    = Ver procesos y su uso de recursos (shift + m = ordenar por memoria, shift + p = ordenar por CPU)
 unalias <comando>                      = Eliminar alias
 tree                                   = Mostrar directorio en forma de árbol
+upzip <file>                           = Descomprimir archivo
 vim <file>                             = Editar archivo con vim
 where >programa<                       = Ver ruta de un programa
 whoami                                 = Mostrar usuario actual
+zip -r <file> <dir>                    = Comprimir directorio
+zip info <file>                        = Mostrar información de un zip
 --color=auto                           = Mostrar colores en la terminal
 --help                                 = Muestra all lo que podemos hacer con un comando ❌
 -                                      = Para letras
 --                                     = Para palabras
+
+control + a                           = Ir al inicio de la línea
+control + c                           = Cancelar comando
+control + l                           = Limpiar terminal
+control + e                           = Mover cursor al final de la línea
+control + t                           = Intercambiar ultimos 2 caracteres
+control + r                           = Buscar comandos en el historial, (control + r: Muestra historial para atras uno por uno)
+control + w                           = Borrar palabra anterior
+
+esc + t                               = Intercambiar ultimos 2 palabras
+
+tab                                   = Autocompletar
 
 ❌ help = Muestra todo lo que podemos hacer con un comando
