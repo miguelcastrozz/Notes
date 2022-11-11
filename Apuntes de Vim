@@ -66,6 +66,7 @@ d$ = Eliminar hasta el final de la línea
 ciw = Cambiar palabra y espacios
 dgg = Eliminar desde el cursor hasta el inicio del archivo
 diw = Eliminar palabra y espacios
+viw = Seleccionar palabra y espacios
 di' = Eliminar contenido de comillas simples
 di" = Eliminar contenido de comillas
 di( = Eliminar contenido de paréntesis
@@ -80,15 +81,20 @@ esc = Salir de insertar / visual
 
 TECLAS
 
-control b = Devolver de página en página
-control i = Volver al archivo siguiente
-control d = Salta media página hacia abajo
-control f = Saltar de página en página
-control e = Bajar una línea
-control o = Volver al archivo anterior ⚠️
 control r = Rehacer
+
+control b = Devolver de página en página ⚠️
+control f = Saltar de página en página   ⚠️
+
+control i = Volver al archivo siguiente ⚠️
+control o = Volver al archivo anterior  ⚠️
+
 control u = Salta media página hacia arriba
+control d = Salta media página hacia abajo
+
 control y = Subir una línea
+control e = Bajar una línea
+
 shift   [ = Ir al principio del bloque
 shift   ] = Ir al final del bloque
 

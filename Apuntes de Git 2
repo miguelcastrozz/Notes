@@ -45,7 +45,7 @@ git log --all --graph --decorate --oneline         = Muestra el historial de com
 git log --oneline                                  = Muestra el historial de commits en una sola linea
 git log --stat                                     = Muestra el historial de commits con los cambios y estadísticas
 git merge                                          = Une dos ramas
-git pull --rebase origin main                      = Trae los cambios del repositorio remoto
+git pull --rebase origin LogicaDeProgramacion.Java.CicloFor                      = Trae los cambios del repositorio remoto
 git pull origin master --allow-unrelated-histories = Trae los cambios del repositorio remoto, Fusionar lo remoto con lo local
 git push origin :refs/tags/>tag<                   = Elimina un tag del repositorio remoto
 git push -u origin master                          = Sube los cambios al repositorio remoto (-u origin master = Crea la rama master en el repositorio remoto)

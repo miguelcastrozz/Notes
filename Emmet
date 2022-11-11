@@ -1,0 +1,16 @@
+> Para meter hijos
+
+. Para clases
+# Para id
+
++ Para hermanos
+^ Para hermanos de arriba
+* Para multiplicar
+$ Para enumerar
+$@ Para enumerar desde un número
+
+() Para agrupar
+[] Para atributos
+{} Para el contenido de los atributos
+
+b{#} Para encerrar en una etiqueta b
