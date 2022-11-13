@@ -1,6 +1,6 @@
 HTML
 
-<strong> Sirve para indicar que es importante
+<strong> Importante
 <em>     Cursiva
 <hr>     Linea horizontal
 <s>      Tachar
@@ -11,26 +11,67 @@ required    Campo obligatorio
 checked     Seleccionado por defecto
 value       Valor por defecto
 
+EMMET
+
+> Para meter hijos
+
+. Para clases
+# Para id
+
++ Para hermanos
+^ Para hermanos de arriba
+* Para multiplicar
+$ Para enumerar
+$@ Para enumerar desde un número
+
+() Para agrupar
+[] Para atributos
+{} Para el contenido de los atributos
+
+b{#} Para encerrar en una etiqueta b
+
 APUNTES DE CSS
 
 Un elemento pude tener varias clases
 width   Ancho
-border-style: solid                      (↕)
-border-style: solid dotted               (↕ ⬅➡)
-border-style: solid dotted dashed        (⬆ ⬅➡ ⬇)
-border-style: solid dotted dashed double (⬆ ➡ ⬇ ⬅) Reloj
-padding: 20px 10px 20px 10px;            (⬆ ➡ ⬇ ⬅) Reloj
-margin: 20px 10px 20px 10px;             (⬆ ➡ ⬇ ⬅) Reloj
-vw      1% del ancho de la ventana gráfica
-vh      1% del alto de la ventana gráfica
-em      1% del tamaño de la fuente
-                    : black; (para navegadores que no soporten variables)
+border-style .... solid                      (↕)
+border-style .... solid dotted               (↕ ⬅➡)
+border-style .... solid dotted dashed        (⬆ ⬅➡ ⬇)
+border-style .... solid dotted dashed double (⬆ ➡ ⬇ ⬅) Reloj
+padding ......... 20px 10px 20px 10px;       (⬆ ➡ ⬇ ⬅) Reloj
+margin  ......... 20px 10px 20px 10px;       (⬆ ➡ ⬇ ⬅) Reloj
+                  : black; (para navegadores que no soporten variables)
 variable de respaldo: (var--variable, black)
 Si no se asigna valor a una variable en un elemento dado, se usara el valor del elemento padre
 Para no tener problemas de herencia con variables respecto a sus padres, se crean globalmente con :root
 Para cambiar el valor de una variable en un area especifica solo se coloca la variable con su nuevo valor como si creara nuevamente
 
-GUIA DE ESTILOS
+Selectores
+
+id ....... Elementos únicos
+class .... Elementos repetidos
+
+Medidas relativas
+
+Ems (em) ................... Esta unidad cambia a los elementos hijos de acuerdo con el tamaño de fuente (font-size) del elemento padre
+Rems (rem, "root em") ...... El REM viene como sucesor del EM y ambos comparten la misma lógica operativa (font-size), pero la forma de implementación es diferente. Mientras que el em está
+                             directamente relacionado con el tamaño de fuente del elemento padre, el rem está relacionado con el tamaño de fuente del elemento root (raíz)
+% .......................... El porcentaje se usa a menudo cuando se trata de un layout responsivo y fluido
+Vw (viewport width) ........ Viewport no es más que el área visible de una página web para su usuario, esta unidad está directamente relacionada con el ancho de la viewport, donde 1vw representa
+                             1% del tamaño del ancho de esa área visible
+Vh (viewport height) ....... Lo mismo que el anterior, pero en este caso se trata del alto de la viewport
+Vmin (viewport minimum) .... A diferencia de los anteriores, el vmin usará como base la dimensión más pequeña de la viewport (altura x ancho), veamos el ejemplo
+                             Imagine que estamos trabajando con una viewport de 1600 px de altura y 900 px de ancho. En ese caso, 1vmin tendrá el valor de 9px (¡1% de la dimensión más pequeña!);
+                             si tenemos 100vmin, ¡esto será igual a 900px!
+Vmax (viewport maximum) .... Siguiendo la misma base lógica que la unidad anterior, el vmax tendrá como valor de referencia la dimensión más grande de la viewport. Es decir, usando el mismo
+                             ejemplo, si tenemos 1600 px de altura y 900 px de ancho,¡1vmax será equivalente a 16px!
+
+BUENAS PRACTICAS EN HTML
+
+- Es mala practica tratar imágenes en el HTML
+
+BUENAS PRACTICAS EN CSS
 
 - En HTML y CSS se deben tener 2 espacios de indentación
-- En CSS cada llaves hay que dejar un espacio
+- Cada llaves hay que dejar un espacio
+- Ordenar alfabéticamente los estilos
