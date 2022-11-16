@@ -4,6 +4,7 @@ a = Insertar texto después del cursor
 A = Insertar texto al final de la línea
 b = Principio de la palabra actual
 e = Final de la palabra actual
+E = Final de la palabra actual (sin contar los espacios)
 G = Final archivo
 h = Desplazamiento derecha
 H = Ir al inicio de la pantalla
@@ -28,6 +29,7 @@ u = Deshacer
 v = Modo visual + Copiar. o para cambiar de lado, a w selecciona palabra
 V = Seleccionar línea
 w = Principio de la siguiente palabra
+W = Principio de la siguiente palabra (sin caracteres especiales)
 x = Borra letra actual
 X = Borra letra izquierda actual
 y = Copiar
@@ -56,6 +58,7 @@ d0 = Eliminar hasta el principio de la línea
 d$ = Eliminar hasta el final de la línea
 =G = Formatear código
 =% = Formatear código entre paréntesis
+== = Formatear línea actual
 << = Desplazar línea a la izquierda
 >> = Desplazar línea a la derecha
 >b = Desplazar palabra a la derecha
@@ -81,22 +84,25 @@ esc = Salir de insertar / visual
 
 TECLAS
 
-control r = Rehacer
+^r = Rehacer
 
-control b = Devolver de página en página ⚠️
-control f = Saltar de página en página   ⚠️
+^b = Devolver de página en página ⚠️
+^f = Saltar de página en página   ⚠️
 
-control i = Volver al archivo siguiente ⚠️
-control o = Volver al archivo anterior  ⚠️
+^i = Volver al archivo siguiente ⚠️
+^o = Volver al archivo anterior  ⚠️
 
-control u = Salta media página hacia arriba
-control d = Salta media página hacia abajo
+^u = Salta media página hacia arriba
+^d = Salta media página hacia abajo
 
-control y = Subir una línea
-control e = Bajar una línea
+^v = Modo visual block
+^y = Subir una línea
+^e = Bajar una línea
 
-shift   [ = Ir al principio del bloque
-shift   ] = Ir al final del bloque
+shift * = Buscar palabra actual
+shift # = Buscar palabra actual en sentido inverso
+shift [ = Ir al principio del bloque
+shift ] = Ir al final del bloque
 
 PARÁMETROS
 
@@ -136,6 +142,9 @@ vi# = Seleccionar all el contenido de los signos de agrupación
 ?#n = Buscar la palabra antes del cursor y saltar a la siguiente coincidencia (N) = Coincidencia anterior
 ?#$ = Buscar la letra al principio de la línea
 
+"#y$ = Copiar hasta el final de la línea en registro #
+"#p  = Pegar el contenido del registro #
+
 COMANDOS
 
 :               = Comandos a vim
@@ -161,6 +170,10 @@ COMANDOS
 :%s/#/#/g       = Remplazar todas las coincidencias de manera global en todas las líneas del archivo
 :%s/#/#/gc      = Remplazar todas las coincidencias de manera global en todas las líneas del archivo y preguntar para confirmar
 :%s/$/#         = Agregar # al final de cada línea
+
+:help quit     = Ayuda de comandos
+:registers     = Ver registros
+:marks         = Ver marcadores
 
 ❌
 
