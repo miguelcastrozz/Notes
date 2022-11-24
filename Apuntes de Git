@@ -1,4 +1,4 @@
-gitk     
+gitk                                               = Abre o gitk, una herramienta gráfica para visualizar o histórico de commits
 git add                                            = Agrega todos los archivos al stating area, se pueden varios solo hay que separarlos por un espacio
 git add .                                          = Agrega todos los archivos (MALA PRACTICA)
 git blame >archivo<                                = Muestra quien modifico cada linea del archivo
